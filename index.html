@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio - HTML/CSS/JS Intermediário</title>
+
+  <!--* CSS -->
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/index.css">
+</head>
+
+<body>
+  <main class="form-container">
+
+    <section class="mensagem-contato">
+      <h1>Ficou com dúvida? <span>Nos mande uma mensagem!</span></h1>
+
+      <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+    </section>
+
+    <form id="formulario">
+
+      <input type="text" id="nome" name="nome" placeholder="Nome completo *">
+      <small class="error-message" id="nome-erro"></small>
+
+      <input type="email" id="email" name="email" placeholder="Email *">
+      <small class="error-message" id="email-erro"></small>
+
+      <input type="tel" id="telefone" name="telefone" placeholder="Telefone *">
+      <small class="error-message" id="telefone-erro"></small>
+
+      <textarea id="mensagem" name="mensagem" placeholder="Mensagem *"></textarea>
+      <small class="error-message" id="mensagem-erro"></small>
+
+      <h4>*campos obrigatórios</h4>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <script src="./src/js/inde.js"></script>
+</body>
+
+</html>
